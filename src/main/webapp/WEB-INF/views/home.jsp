@@ -1,0 +1,15 @@
+
+<html>
+<head>
+<title><spring:message code="App.Title"></spring:message> </title>
+</head>
+<body>
+
+<!-- 	<p><a href="viewAllContacts.do">Show Contacts</a> </p>
+ -->	
+ 
+ <%
+response.sendRedirect("home.do");
+%>
+</body>
+</html>

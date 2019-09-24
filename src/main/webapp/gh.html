@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<form>Select your favorite fruit:
+    <select id="mySelect">
+        <option value="a">Apple</option>
+        <option value="o">Orange</option>
+        <option value="p">Pineapple</option>
+        <option value="b">Banana</option>
+    </select>
+</form>
+function displayResult() {
+    var x = document.getElementById("mySelect");
+    var txt = "All options: ";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        txt = txt + "\n" + x.options[i].value;
+    }
+    alert(txt);
+}
+<button type="button" onclick="displayResult()">Display text of all options</button>
+</html>
